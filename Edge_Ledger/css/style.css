@@ -32,6 +32,18 @@ p{
 .text-primary{
     color: #93cb52;
 }
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+.bg-primary{
+    background: #93cb52;
+    color: #fff;
+}
 .l-heading{
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -61,12 +73,26 @@ p{
 .py-2{padding: 2rem 0;}
 .py-3{padding: 3rem 0;}
 
+.p-1{padding: 1.5rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
 .btn:hover{
     background: #7ab436;
 }
 .btn-dark{
     background: #333;
     color: #fff;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
 }
 
 /* Navbar */
@@ -141,4 +167,51 @@ p{
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url('../img/people-on-sidewalk-selective-focal-photo-1687093.jpg') no-repeat center center/cover;
+}
+
+/* Clients */
+#clients .items{
+    display: flex;
+}
+
+#clients .items img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 50%;
+}
+
+/* Section: Contact */
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
 }
